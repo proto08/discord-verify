@@ -17,7 +17,7 @@
     "formik": "^2.4.9",
     "iron-session": "^9.0.1",
     "lucide-react": "^1.48.0",
-    "next": "16.3.6",
+    "next": "16.3.7",
     "next-turnstile": "^1.0.7",
     "react": "19.3.0",
     "react-dom": "19.3.0",
