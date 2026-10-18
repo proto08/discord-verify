@@ -8,7 +8,7 @@ updates:
     open-pull-requests-limit: 10
     versioning-strategy: increase
     cooldown:
-      default-days: 3
+      default-days: 7
     groups:
       minor-patch:
         update-types:
@@ -25,7 +25,7 @@ updates:
       interval: "daily"
     open-pull-requests-limit: 10
     cooldown:
-      default-days: 3
+      default-days: 7
     groups:
       minor-patch:
         update-types:
