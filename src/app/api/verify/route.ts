@@ -33,7 +33,10 @@ export async function POST(req: NextRequest) {
       return BadRequest()
     }
 
-    await validateToken(token)
+    if (typeof token !== 'string' || !(await validateToken(token, ip || undefined))) {
+      console.error('Invalid Turnstile token')
+      return BadRequest()
+    }
     const getTokenResult = await getAccessToken(session.code)
     const user = await getUserInfo(getTokenResult.access_token)
     const ipInfo = await getIpInfo(ip)
