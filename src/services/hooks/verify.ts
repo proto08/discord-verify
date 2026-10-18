@@ -42,7 +42,7 @@ export function useVerify(): UseVerify {
       try {
         await trigger(values)
         router.push('verify/success')
-      } catch (error) {
+      } catch {
         router.push('verify/error')
       }
     },
